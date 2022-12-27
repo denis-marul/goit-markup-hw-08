@@ -1,0 +1,45 @@
+.services__list {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    max-width: 326px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+}
+
+.services__item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.services__button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    background-color: var(--gray-background-color);
+    border: none;
+    cursor: pointer;
+    padding: 6px 22px;
+    min-width: 67px;
+    border-radius: 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--second-color);
+        background-color: var(--special-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}

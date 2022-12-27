@@ -1,0 +1,38 @@
+
+.specialization {
+    display: none;
+    @media screen and (min-width: 1200px) {
+            display: block; 
+        }
+}
+
+.specialization__list {
+    display: flex;
+  
+}
+
+
+
+.specialization__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.specialization__item>.specialization__label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+    color: var(--second-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    font-weight: 700;
+
+}

@@ -1,0 +1,72 @@
+.teammates {
+    background-color: var(--gray-background-color);
+}
+
+.teammates__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.teammates__item {
+    background-color: var(--second-color);
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+
+}
+
+.teammates__photo {
+    width: 100%;
+}
+
+
+.teammates__meta {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.teammates__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 10px;
+}
+
+.teammates__speciality {
+    color: var(--third-color);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-socmedia-list {
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.team-socmedia-link {
+    fill: #AFB1B8;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-radius: 50%;
+        background-color: var(--special-color);
+        fill: #FFFFFF;
+    }
+}

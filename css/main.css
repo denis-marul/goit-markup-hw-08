@@ -237,6 +237,11 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .mob-menu__button {
+    display: none;
+  }
+}
 
 .mobmenu_close__button {
   display: block;
@@ -258,6 +263,16 @@ ul {
   left: -100px;
   right: auto;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    display: none;
+  }
+}
 
 .mob-nav {
   font-weight: 500;
@@ -267,7 +282,7 @@ ul {
 }
 
 .mob-nav__list li:not(:last-child) {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .mob-nav__link {
@@ -408,8 +423,10 @@ ul {
   }
 }
 
-.advances {
-  padding-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .advances {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {

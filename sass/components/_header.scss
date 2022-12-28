@@ -170,6 +170,11 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
+
+           
+                @media screen and (min-width: 1200px) {
+                  display: none;
+                }
 }
 
 .mobmenu_close__button {
@@ -195,6 +200,15 @@
         left: -100px;
         right: auto;
     }
+
+           @media screen and (min-width: 768px) {
+               display: none;
+           }
+    
+    
+           @media screen and (min-width: 1200px) {
+               display: none;
+           }
 }
 
 
@@ -210,7 +224,7 @@
 
 
 .mob-nav__list li:not(:last-child) {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 

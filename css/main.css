@@ -281,6 +281,12 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .mob-nav__list li:not(:last-child) {
   margin-bottom: 32px;
 }
